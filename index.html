@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Sinu Xavier</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background-color: rgb(85, 85, 165);
+            color: whitesmoke;
+            font-family: 'Poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: white;
+            opacity: 0.2;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: darkgreen;
+        }
+        nav ul li a:hover{
+            color: yellowgreen;
+            size: 2rem;
+        }
+        main hr{
+            border:0;
+            background: yellowgreen;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+        .left{
+            font-size: 1rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin: 110px 0;
+        }
+        .firstSection > div{
+            width: 30%;
+
+        }
+        .leftSection{
+            width: 30%;
+            font-size: 2rem;
+            margin: 70px 0;
+        }
+        .rightSection{
+            width: 30%;
+            margin: 40px 0;
+        }
+        .rightSection img{
+            border-radius: 75%;
+        }
+        .purple{
+            color: yellowgreen;
+        }
+        #element{
+            color: yellowgreen;
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            font-size: 1.5rem;
+            height: 80vh;
+        }
+        .text-gray{
+            color: yellowgreen;
+        }
+        .secondSection .box{
+            background: white;
+            width: 78vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 73px;
+            width: 1px;
+            background-color: antiquewhite;
+            margin:0 90px;
+        }
+        .vertical-title{
+           position: relative;
+           top: 74px;
+           width: 150px; 
+        }
+        .vertical-desc{
+            position: relative;
+            top: 78px;
+            font-size: 12px;
+            width: 150px;
+        }
+        footer{
+            background-color:yellowgreen;
+            height: 100px;
+            color: black;
+        }
+        .footer{
+            display: flex;
+            padding:23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><b>Portfolio-Sinu</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home"><b>Home</b></a></li>
+                    <li><a href="#home"><b>About</b></a></li>
+                    <li><a href="#project"><b>Services</b></a></li>
+                    <li><a href="#project"><b>Projects</b></a></li>
+                    <li><a href="#contact"><b>Contact Me</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                <h4>Hello, I'm <span class="purple">Sinu.</span></h4>
+                <div>I am a potential</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png">
+            </div>
+        </section><hr>
+        <section class="secondSection" id="project">
+            <span class="text-gray">Things done so far</span>
+              <h1>Projects & Experience</h1>
+              <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <h5>AI/ML Intern</h5>
+                    </div>
+                    <div class="vertical-desc">
+                        Created 3 projects under this internship. Inventory Management System,Data Analysis, Breast Cancer Detection Model.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <h5>Web Dev Intern</h5>
+                    </div>
+                    <div class="vertical-desc">
+                        Created a dynamic banking website using php and sql.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <h5>SMS Spam Classifier</h5>
+                    </div>
+                    <div class="vertical-desc">
+                        Project created using the concepts of NLP and machine learning and front end created through streamlit using flask framework.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <h5>Housing Price Prediction</h5>
+                    </div>
+                    <div class="vertical-desc">
+                        Project created using Linear regression model.Frontend and Backend connected through Flask Framework,deployed through CI/CD pipelines.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <h5>Open Source Contributor</h5>
+                    </div>
+                    <div class="vertical-desc">
+                        I have contributed to some open source projects throght girlscript winter of coding,hacktoberfest.
+                    </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer" id="contact">
+            <div class="first">Portfolio-Sinu</div>
+            <div class="second">
+                <ul>
+                    <li>Mail id:</li>
+                    <li>sinuxavier2015@gmail.com</li>
+                </ul>
+            </div>
+            <div class="third">
+                <ul>
+                    <li>Contact:</li>
+                    <li>9993364392</li>
+                </ul>
+            </div>
+            <div class="fourth">
+                <ul>
+                    <li>Profession:</li>
+                    <li>B.E Fianl Year Student</li>
+                    <li>IET DAVV,Indore</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['AI/ML Developer', 'Web Developer','Open Source Contributor.'],
+          typeSpeed: 70,
+        });
+      </script>
+</body>
+</html>
